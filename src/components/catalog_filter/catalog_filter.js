@@ -69,7 +69,7 @@ class CatalogueFilter extends Component {
             onChange={(e) => {
               this.resetButtons();
               this.setState({ inputValue: e.target.value });
-              this.props.search(e);
+              this.props.searchElement(e);
             }}
             value={this.state.inputValue}
           />

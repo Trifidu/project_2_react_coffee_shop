@@ -9,7 +9,7 @@ const Products = (props) => {
     <section className="products">
       <h2 className="products-title">Our best</h2>
       <div className="cards">
-        {props.itemsData.map((el, index) => {
+        {props.itemsData.slice(3).map((el, index) => {
           return <ItemCard key={index} itemData={el} />;
         })}
       </div>

@@ -14,7 +14,7 @@ class ItemCatalogue extends React.Component {
         <section className="coffee-catalogue">
           <CatalogueFilter
             itemsData={this.props.itemsData}
-            search={this.props.search}
+            searchElement={this.props.searchElement}
             toggleFilter={this.props.toggleFilter}
           />
           <CatalogueItems itemsData={this.props.itemsData} />
