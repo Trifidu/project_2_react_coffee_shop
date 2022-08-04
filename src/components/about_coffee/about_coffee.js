@@ -1,19 +1,17 @@
 import React from "react";
-
-import aboutCoffeeImg from "./about_coffee.jpg";
-import beans from "./beans_logo_dark.svg";
+import logoDark from "../../images/beans_logo_dark.svg";
 
 import "./about_coffee.css";
 
-const AboutCoffee = () => {
+const Article = ({ imagePath, title }) => {
   return (
-    <article className="about_coffee">
-      <div className="img_box">
-        <img src={aboutCoffeeImg} alt="" />
+    <article className="about-coffee-article">
+      <div className="img-box">
+        <img src={imagePath} alt="" />
       </div>
-      <div className="about_coffee_content">
-        <h2>About out beans</h2>
-        <img src={beans} alt="Logo" />
+      <div className="about-coffee-content">
+        <h2>{title}</h2>
+        <img src={logoDark} alt="Logo" />
         <p>
           Extremity sweetness difficult behaviour he of. On disposal of as
           landlord horrible.
@@ -29,4 +27,4 @@ const AboutCoffee = () => {
   );
 };
 
-export default AboutCoffee;
+export default Article;

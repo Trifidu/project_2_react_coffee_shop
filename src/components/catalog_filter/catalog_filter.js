@@ -1,8 +1,6 @@
-import React from "react";
-
+import React, { Component } from "react";
 import "./catalog_filter.css";
-
-class CatalogFilter extends React.Component {
+class CatalogueFilter extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -104,4 +102,4 @@ class CatalogFilter extends React.Component {
   }
 }
 
-export default CatalogFilter;
+export default CatalogueFilter;

@@ -1,12 +1,11 @@
 import React from "react";
 
+import AboutUs from "../components/about/about";
 import Banner from "../components/banner/banner";
-import About from "../components/about/about";
-import Best from "../components/best/best";
-
-import bestImg1 from "./best_item_1.jpg";
-import bestImg2 from "./best_item_2.jpg";
-import bestImg3 from "./best_item_3.jpg";
+import Products from "../components/best/best";
+import bestProd1 from "../images/best_item_1.jpg";
+import bestProd2 from "../images/best_item_2.jpg";
+import bestProd3 from "../images/best_item_3.jpg";
 
 class MainPage extends React.Component {
   constructor(props) {
@@ -15,29 +14,39 @@ class MainPage extends React.Component {
     this.state = {
       itemsData: [
         {
-          img: bestImg1,
-          title: "Solimo Coffee Beans 2 kg",
+          img: bestProd1,
+          heading: "Solimo Coffee Beans 2 kg",
+          country: "Italia",
           price: "10.73$",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         },
         {
-          img: bestImg2,
-          title: "Presto Coffee Beans 1 kg",
+          img: bestProd2,
+          heading: "Presto Coffee Beans 1 kg",
+          country: "France",
           price: "15.99$",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         },
         {
-          img: bestImg3,
-          title: "AROMISTICO Coffee 1 kg",
+          img: bestProd3,
+          heading: "AROMISTICO Coffee 1 kg",
+          country: "Ukraine",
           price: "6.99$",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         },
       ],
     };
   }
+
   render() {
     return (
       <>
-        <Banner />
-        <About />
-        <Best itemsData={this.state.itemsData} />
+        <Banner link={"/ourCoffee"} />
+        <AboutUs />
+        <Products itemsData={this.state.itemsData} />
       </>
     );
   }

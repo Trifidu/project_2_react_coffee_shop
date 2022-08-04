@@ -1,5 +1,5 @@
 body {
-    background-image: url(../../../public/img/main_bg.jpg);
+    background-image: url(../../images/main_bg.jpg);
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: 100%;
@@ -20,12 +20,6 @@ h2 {
     margin: 8% auto 14%;
 }
 
-.container_title {
-    margin-bottom: 1%;
-    text-align: center;
-}
-
-
 .container_content {
     display: flex;
     flex-direction: column;
@@ -33,6 +27,11 @@ h2 {
     align-items: center;
     color: white;
     text-shadow: 1px 1px 6px black;
+}
+
+.container_title {
+    margin-bottom: 1%;
+    text-align: center;
 }
 
 
@@ -53,6 +52,36 @@ h2 {
     color: black;
 }
 
-.btn_mt30 {
-    margin-top: 18px;
+.btn_mt30px {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        background-size: auto;
+    }
+
+    .container_title {
+        font-size: 30px;
+    }
+
+    .container_sub_title {
+        font-size: 14px;
+    }
+
+    .container {
+        margin-top: 70px;
+        margin-bottom: 200px;
+        height: 250px;
+    }
+
+    .more_btn {
+        width: 148px;
+        height: 37px;
+    }
+
+    .btn_mt30px {
+        margin-top: 25px;
+    }
 }

@@ -1,15 +1,15 @@
 import React from "react";
 
-import "./about.css";
+import beansLogoDark from "../../images/beans_logo_dark.svg";
 
-import beans from "./beans_logo_dark.svg";
+import "./about.css";
 
 const AboutUs = () => {
   return (
-    <article className="about_article">
+    <article className="about__article">
       <h2>About Us</h2>
-      <img src={beans} alt="logo" />
-      <p className="text">
+      <img src={beansLogoDark} alt="logo" />
+      <p className="about__text">
         Extremity sweetness difficult behaviour he of. On disposal of as
         landlord horrible. Afraid at highly months do things on at. Situation
         recommend objection do intention so questions. As greatly removed

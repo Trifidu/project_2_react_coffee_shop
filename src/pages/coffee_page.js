@@ -1,59 +1,59 @@
 import React from "react";
+import Article from "../components/about_coffee/about_coffee";
+import HeadTittle from "../components/head_title/head_title";
+import ItemCatalogue from "../components/item_catalog/item_catalog";
+import coffeeImg from "../images/best_item_3.jpg";
+import coffeeBg from "../images/our_coffee_bg.jpg";
+import aboutCoffeeImg from "../images/about_coffee.jpg";
 
-import HeadTitle from "../components/head_title/head_title";
-import AboutCoffee from "../components/about_coffee/about_coffee";
-import ItemCatalog from "../components/item_catalog/item_catalog";
-
-import bestImg3 from "./best_item_3.jpg";
-
-class Coffee extends React.Component {
+class OurCoffee extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       itemsData: [
         {
-          img: bestImg3,
-          title: "AROMISTICO Coffee 1 kg",
+          img: coffeeImg,
+          heading: "AROMISTICO Coffee 1 kg",
           country: "Brazil",
           price: "6.99$",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         },
         {
-          img: bestImg3,
-          title: "BROMISTICO Coffee 1 kg",
+          img: coffeeImg,
+          heading: "BROMISTICO Coffee 1 kg",
           country: "Kenya",
           price: "6.99$",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         },
         {
-          img: bestImg3,
-          title: "CROMISTICO Coffee 1 kg",
+          img: coffeeImg,
+          heading: "CROMISTICO Coffee 1 kg",
           country: "Columbia",
           price: "6.99$",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         },
         {
-          img: bestImg3,
-          title: "DROMISTICO Coffee 1 kg",
+          img: coffeeImg,
+          heading: "DROMISTICO Coffee 1 kg",
           country: "Brazil",
           price: "6.99$",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         },
         {
-          img: bestImg3,
-          title: "EROMISTICO Coffee 1 kg",
+          img: coffeeImg,
+          heading: "EROMISTICO Coffee 1 kg",
           country: "Brazil",
           price: "6.99$",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         },
         {
-          img: bestImg3,
-          title: "FROMISTICO Coffee 1 kg",
+          img: coffeeImg,
+          heading: "FROMISTICO Coffee 1 kg",
           country: "Brazil",
           price: "6.99$",
           description:
@@ -121,10 +121,10 @@ class Coffee extends React.Component {
     };
     return (
       <>
-        <HeadTitle />
-        <AboutCoffee />
+        <HeadTittle backgroundImage={coffeeBg} titleText={"Our Coffee"} />
+        <Article imagePath={aboutCoffeeImg} title={"About out beans"} />
         <hr style={hrStyle} />
-        <ItemCatalog
+        <ItemCatalogue
           itemsData={this.state.itemsData}
           search={this.searchElement}
           toggleFilter={this.toggleFilter}
@@ -134,4 +134,4 @@ class Coffee extends React.Component {
   }
 }
 
-export default Coffee;
+export default OurCoffee;

@@ -1,11 +1,9 @@
-import React from "react";
-
-import CatalogFilter from "../catalog_filter/catalog_filter";
-import CatalogItems from "../catalog_items/catalog_items";
-
 import "./item_catalog.css";
 
-class ItemCatalog extends React.Component {
+import React from "react";
+import CatalogueFilter from "../catalog_filter/catalog_filter";
+import { CatalogueItems } from "../catalog_items/catalog_items";
+class ItemCatalogue extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -13,17 +11,17 @@ class ItemCatalog extends React.Component {
   render() {
     return (
       <>
-        <section className="coffee_catalogue">
-          <CatalogFilter
+        <section className="coffee-catalogue">
+          <CatalogueFilter
             itemsData={this.props.itemsData}
             search={this.props.search}
             toggleFilter={this.props.toggleFilter}
           />
-          <CatalogItems itemsData={this.props.itemsData} />
+          <CatalogueItems itemsData={this.props.itemsData} />
         </section>
       </>
     );
   }
 }
 
-export default ItemCatalog;
+export default ItemCatalogue;
