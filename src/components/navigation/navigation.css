@@ -11,9 +11,8 @@ a:visited {
     width: 180px;
     height: 45px;
     text-align: end;
-    vertical-align: bottom;
+    line-height: 45px;
 }
-
 
 .header {
     margin-left: 5%;
@@ -27,7 +26,17 @@ a:visited {
 
 header .active {
     background: url(../../images/coffee_beans_logo.svg) no-repeat;
-    background-position: left;
+    background-position: left top;
+}
+
+header .active:nth-child(1) {
+    background-position: left 35px top;
+
+}
+
+header .active:nth-child(2) {
+    background-position: left 50px top;
+
 }
 
 footer {
@@ -47,18 +56,28 @@ footer {
 .footer_nav {
     color: black;
     font-size: 12px;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
     display: inline-block;
-    width: 180px;
+    width: 155px;
     height: 35px;
     text-align: end;
-    vertical-align: bottom;
+    line-height: 35px;
 }
 
 footer .active {
     background: url(../../images/coffee_beans_logo_dark.svg) no-repeat;
     background-position: left;
+}
+
+footer .active:nth-child(1) {
+    background-position: left 35px top;
+
+}
+
+footer .active:nth-child(2) {
+    background-position: left 50px top;
+
 }
 
 .footer_logo {
