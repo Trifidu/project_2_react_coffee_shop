@@ -1,7 +1,7 @@
 import "./catalog_items.css";
 import React from "react";
 import ItemCard from "../item_card/item_card";
-export class CatalogueItems extends React.Component {
+class CatalogItems extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -9,7 +9,7 @@ export class CatalogueItems extends React.Component {
   render() {
     return (
       <>
-        <section className="itemsCards">
+        <section className="catalog_items">
           {this.props.itemsData.map((el, index) => {
             return <ItemCard key={index} itemData={el} />;
           })}
@@ -18,3 +18,5 @@ export class CatalogueItems extends React.Component {
     );
   }
 }
+
+export default CatalogItems;

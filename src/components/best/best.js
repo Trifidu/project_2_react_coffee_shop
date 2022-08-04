@@ -4,11 +4,11 @@ import ItemCard from "../item_card/item_card";
 
 import "./best.css";
 
-const Products = (props) => {
+const Best = (props) => {
   return (
-    <section className="products">
-      <h2 className="products-title">Our best</h2>
-      <div className="cards">
+    <section className="best">
+      <h2 className="best_title">Our best</h2>
+      <div className="best_cards">
         {props.itemsData.slice(3).map((el, index) => {
           return <ItemCard key={index} itemData={el} />;
         })}
@@ -17,4 +17,4 @@ const Products = (props) => {
   );
 };
 
-export default Products;
+export default Best;

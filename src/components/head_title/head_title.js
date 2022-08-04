@@ -1,17 +1,16 @@
 import React from "react";
 import "./head_title.css";
-import PropTypes from "prop-types";
 
-const HeadTittle = ({ backgroundImage, titleText }) => {
+const HeadTitle = ({ backgroundImage, titleText }) => {
   return (
     <>
       <style>
         {`
-                    body {
-                        background-image: url(${backgroundImage});
-                        background-attachment: scroll;
-                    }
-                `}
+          body {
+              background-image: url(${backgroundImage});
+              background-attachment: scroll;
+          }
+        `}
       </style>
       <article className="title">
         <h1>{titleText}</h1>
@@ -20,9 +19,4 @@ const HeadTittle = ({ backgroundImage, titleText }) => {
   );
 };
 
-HeadTittle.propTypes = {
-  backgroundImage: PropTypes.string,
-  titleText: PropTypes.string,
-};
-
-export default HeadTittle;
+export default HeadTitle;

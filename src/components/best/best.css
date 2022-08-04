@@ -1,4 +1,4 @@
-.products {
+.best {
     background-image: url(../../images/best_bg.jpg);
     background-size: 100%;
     height: 520px;
@@ -8,15 +8,11 @@
     align-items: center;
 }
 
-.products-title {
+.best_title {
     margin-bottom: 2%;
 }
 
-.product-price {
-    float: right;
-}
-
-.cards {
+.best_cards {
     display: flex;
     justify-content: space-around;
     width: 75%;

@@ -6,10 +6,10 @@ import "./about.css";
 
 const AboutUs = () => {
   return (
-    <article className="about__article">
+    <article className="about_article">
       <h2>About Us</h2>
       <img src={beansLogoDark} alt="logo" />
-      <p className="about__text">
+      <p className="about_text">
         Extremity sweetness difficult behaviour he of. On disposal of as
         landlord horrible. Afraid at highly months do things on at. Situation
         recommend objection do intention so questions. As greatly removed

@@ -1,4 +1,4 @@
-.itemsCards {
+.catalog_items {
     width: 850px;
     margin: 20px auto;
     display: flex;
@@ -8,13 +8,13 @@
 }
 
 @media screen and (max-width: 850px) {
-    .itemsCards {
+    .catalog_items {
         width: 600px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .itemsCards {
+    .catalog_items {
         width: 300px;
         margin-top: 15px;
     }

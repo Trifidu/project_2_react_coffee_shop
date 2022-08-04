@@ -1,8 +1,8 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-import HeadTittle from "../components/head_title/head_title";
-import { ItemDescription } from "../components/item_descr/item_descr";
+import HeadTitle from "../components/head_title/head_title";
+import ItemDescription from "../components/item_descr/item_descr";
 
 import coffeeBg from "../images/our_coffee_bg.jpg";
 
@@ -11,7 +11,7 @@ const ItemPage = () => {
 
   return (
     <>
-      <HeadTittle backgroundImage={coffeeBg} titleText={"Our Coffee"} />
+      <HeadTitle backgroundImage={coffeeBg} titleText={"Our Coffee"} />
       <ItemDescription
         heading={heading}
         image={image}

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     color: white;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-bottom: 84px;
 }
 
@@ -14,7 +14,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .burger {
-        width: 40px;
+    .title {
+        margin-top: 70px;
     }
 }

@@ -27,7 +27,7 @@ class CatalogueFilter extends Component {
   };
 
   changeStatus = (e) => {
-    e.target.classList.toggle("filter-selected");
+    e.target.classList.toggle("filter_selected");
     this.setState({ btnStatus: !this.state.btnStatus });
   };
 
@@ -35,8 +35,8 @@ class CatalogueFilter extends Component {
     const elements = this.filterButtons;
 
     for (let i = 0; i < elements.length; i++) {
-      if (elements[i].classList.contains("filter-selected")) {
-        elements[i].classList.remove("filter-selected");
+      if (elements[i].classList.contains("filter_selected")) {
+        elements[i].classList.remove("filter_selected");
       }
     }
 
@@ -49,14 +49,14 @@ class CatalogueFilter extends Component {
 
   btnClick = (e, country) => {
     this.changeStatus(e);
-    const trigger = this.checkClass(e, "filter-selected");
+    const trigger = this.checkClass(e, "filter_selected");
     this.props.toggleFilter(e, trigger, country);
   };
 
   render() {
     return (
-      <div className="search-panel">
-        <div className="input">
+      <div className="search_panel">
+        <div className="search_main_input">
           <label htmlFor="search" className="search-label">
             Looking for
           </label>
@@ -64,7 +64,7 @@ class CatalogueFilter extends Component {
             type="text"
             placeholder="start typing here..."
             id="search"
-            className="search-input"
+            className="search_input"
             autoComplete={"off"}
             onChange={(e) => {
               this.resetButtons();
@@ -75,16 +75,16 @@ class CatalogueFilter extends Component {
           />
         </div>
         <div className="filter">
-          <div className="filter-title">
+          <div className="filter_title">
             <h4>Or filter</h4>
           </div>
-          <div className="filter-cards">
+          <div className="filter_cards">
             {this.state.countries.map((el, index) => {
               const country = el["country"];
               return (
                 <React.Fragment key={index}>
                   <button
-                    className="filer-card"
+                    className="filer_card"
                     onClick={(e) => {
                       this.btnClick(e, country);
                       this.setState({ inputValue: "" });

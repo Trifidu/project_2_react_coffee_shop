@@ -22,15 +22,15 @@ class ItemCard extends React.Component {
             description: this.props.itemData.description,
           }}
         >
-          <div className="card">
-            <div className="img-container">
+          <div className="item">
+            <div className="item_img_box">
               <img
-                className="product-img"
+                className="item_product_img"
                 src={this.props.itemData.img}
                 alt="Coffee"
               />
             </div>
-            <div className="content-container">
+            <div className="item_content_container">
               <h3>{this.props.itemData.heading}</h3>
               <h3>{this.props.itemData.country}</h3>
               <h3>{this.props.itemData.price}</h3>

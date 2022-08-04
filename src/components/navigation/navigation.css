@@ -3,10 +3,14 @@ a:visited {
     text-decoration: none;
 }
 
-.nav-item {
+.nav_item {
     color: white;
     font-size: 12px;
     margin-left: 4%;
+    display: inline-block;
+    width: 180px;
+    text-align: end;
+    vertical-align: bottom;
 }
 
 
@@ -16,9 +20,15 @@ a:visited {
 }
 
 .active {
-    transition: 0.3s;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
+    transition: all 0.5s;
+}
+
+header .active {
+    background: url(../../images/coffee_beans_logo.svg) no-repeat;
+    background-position: left;
+    height: 45px;
 }
 
 footer {
@@ -33,18 +43,26 @@ footer {
 .footer {
     width: 100%;
     text-align: center;
-
 }
 
-.footer-nav {
+.footer_nav {
     color: black;
     font-size: 12px;
     margin-left: 1%;
     margin-right: 1%;
-
+    display: inline-block;
+    width: 180px;
+    text-align: end;
+    vertical-align: bottom;
 }
 
-.footer-logo {
+footer .active {
+    background: url(../../images/coffee_beans_logo_dark.svg) no-repeat;
+    background-position: left;
+    height: 45px;
+}
+
+.footer_logo {
     margin-top: 2%;
 }
 
@@ -72,11 +90,11 @@ footer {
     margin-bottom: 5px;
 }
 
-.menuItemsList {
+.menu_items_list {
     padding-left: 0;
 }
 
-.menuItems {
+.menu_items {
     position: absolute;
     transition: 0.5s;
     top: 0;
@@ -96,7 +114,7 @@ footer {
     margin: 0;
 }
 
-#menuToggle:checked~.menuItems {
+#menuToggle:checked~.menu_items {
     transition: 0.5s;
     left: 0;
 }
@@ -117,7 +135,7 @@ footer {
 
 }
 
-.menuItem {
+.menu_item {
     width: 100%;
     list-style-type: none;
     text-align: center;
@@ -135,7 +153,7 @@ footer {
         display: block;
     }
 
-    .nav-item {
+    .nav_item {
         font-size: 20px;
     }
 

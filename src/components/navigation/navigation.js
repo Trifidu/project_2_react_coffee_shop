@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
+
 import logoLight from "../../images/coffee_beans_logo.svg";
 import logoDark from "../../images/coffee_beans_logo_dark.svg";
 import logoLongDark from "../../images/beans_logo_dark.svg";
@@ -12,14 +13,14 @@ class Navigation extends React.Component {
       <>
         <header>
           <nav className="header">
-            <NavLink to="/" className="nav-item">
-              <img src={logoLight} alt="Logo" />
+            <NavLink to="/" className="nav_item">
+              {/* <img src={logoLight} alt="Logo" /> */}
               Coffee house
             </NavLink>
-            <NavLink to="/ourCoffee" className="nav-item">
+            <NavLink to="/ourCoffee" className="nav_item">
               Our Coffee
             </NavLink>
-            <NavLink to="/forYourPleasure" className="nav-item">
+            <NavLink to="/forYourPleasure" className="nav_item">
               For your pleasure
             </NavLink>
           </nav>
@@ -32,21 +33,21 @@ class Navigation extends React.Component {
                 <div className="elem third"></div>
               </div>
             </label>
-            <div className="menuItems">
-              <ul className="menuItemsList">
-                <li className="menuItem">
-                  <NavLink to="/" className="nav-item">
+            <div className="menu_items">
+              <ul className="menu_items_list">
+                <li className="menu_item">
+                  <NavLink to="/" className="nav_item">
                     <img src={logoLight} alt="Logo" />
                     Coffee house
                   </NavLink>
                 </li>
-                <li className="menuItem">
-                  <NavLink to="/ourCoffee" className="nav-item">
+                <li className="menu_item">
+                  <NavLink to="/ourCoffee" className="nav_item">
                     Our Coffee
                   </NavLink>
                 </li>
-                <li className="menuItem">
-                  <NavLink to="/forYourPleasure" className="nav-item">
+                <li className="menu_item">
+                  <NavLink to="/forYourPleasure" className="nav_item">
                     For your pleasure
                   </NavLink>
                 </li>
@@ -57,18 +58,18 @@ class Navigation extends React.Component {
         <Outlet />
         <footer>
           <nav className="footer">
-            <NavLink to="/" className="footer-nav">
-              <img src={logoDark} alt="Logo" />
+            <NavLink to="/" className="footer_nav">
+              {/* <img src={logoDark} alt="Logo" /> */}
               Coffee house
             </NavLink>
-            <NavLink to="/ourCoffee" className="footer-nav">
+            <NavLink to="/ourCoffee" className="footer_nav">
               Our Coffee
             </NavLink>
-            <NavLink to="/forYourPleasure" className="footer-nav">
+            <NavLink to="/forYourPleasure" className="footer_nav">
               For your pleasure
             </NavLink>
           </nav>
-          <img className="footer-logo" src={logoLongDark} alt="logo" />
+          <img className="footer_logo" src={logoLongDark} alt="logo" />
         </footer>
       </>
     );

@@ -2,8 +2,8 @@ import "./item_catalog.css";
 
 import React from "react";
 import CatalogueFilter from "../catalog_filter/catalog_filter";
-import { CatalogueItems } from "../catalog_items/catalog_items";
-class ItemCatalogue extends React.Component {
+import CatalogueItems from "../catalog_items/catalog_items";
+class ItemCatalog extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -11,7 +11,7 @@ class ItemCatalogue extends React.Component {
   render() {
     return (
       <>
-        <section className="coffee-catalogue">
+        <section className="item_catalog">
           <CatalogueFilter
             itemsData={this.props.itemsData}
             searchElement={this.props.searchElement}
@@ -24,4 +24,4 @@ class ItemCatalogue extends React.Component {
   }
 }
 
-export default ItemCatalogue;
+export default ItemCatalog;

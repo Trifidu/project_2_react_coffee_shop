@@ -1,4 +1,4 @@
-.about__article {
+.about_article {
     background-color: white;
     height: 520px;
     display: flex;
@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.about__text {
+.about_text {
     width: 30%;
     text-align: center;
     font-size: 14px;
@@ -16,6 +16,7 @@
 @media screen and (max-width: 1000px) {
     .about_article {
         margin-top: 100px;
+        height: 100%
     }
 
     .text {

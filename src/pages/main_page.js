@@ -1,8 +1,8 @@
 import React from "react";
 
-import AboutUs from "../components/about/about";
 import Banner from "../components/banner/banner";
-import Products from "../components/best/best";
+import AboutUs from "../components/about/about";
+import Best from "../components/best/best";
 class MainPage extends React.Component {
   constructor(props) {
     super(props);
@@ -13,7 +13,7 @@ class MainPage extends React.Component {
       <>
         <Banner link={"/ourCoffee"} />
         <AboutUs />
-        <Products itemsData={this.props.itemsData} />
+        <Best itemsData={this.props.itemsData} />
       </>
     );
   }
