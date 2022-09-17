@@ -15,4 +15,4 @@
 
 ## Link
 
-[versel-Coffee-Shop](https://project-2-react-coffee-shop.vercel.app)
+[vercel-Coffee-Shop](https://project-2-react-coffee-shop.vercel.app)
